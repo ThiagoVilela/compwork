@@ -5,9 +5,10 @@ import java.io.IOException;
 
 public class MyReader {
 	
-	private String filename;
+	private Lexator filename;
 	
 	public MyReader(String filename) throws FileNotFoundException, IOException, Exception {
-		this.filename = filename;
+		this.filename = new Lexator(filename);
 	}
+
 }
