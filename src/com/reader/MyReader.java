@@ -22,5 +22,13 @@ public class MyReader {
 		this.stackArray = new Stack<Vector<Token>>();
 		this.tokenArray = new Vector<Token>();
 	}
+	
+	public void next() throws Exception{
+		previewToken = actualToken;
+		if (backtrackingArray.size() == 0) {
+			actualToken = lexator.getToken();
+		} else {
 
+		}
+	}
 }

@@ -8,6 +8,8 @@ public class Main {
 	public static void main(String[] args) {
 		try {
 			MyReader reader = new MyReader("ArquivoTeste.java");
+			
+			MyParser parser = new MyParser(reader);
 
 		} catch (FileNotFoundException fnfe) {
 			System.err.println(fnfe.toString());
